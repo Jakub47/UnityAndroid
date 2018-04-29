@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{4812706A-9E46-DEA3-FD14-7299D37F25F5}") = "ShipDefender", "Assembly-CSharp-firstpass.csproj", "{20EA7121-AF74-B052-BA0B-AC8A36BBD0B5}"
+EndProject
+Project("{4812706A-9E46-DEA3-FD14-7299D37F25F5}") = "ShipDefender", "Assembly-CSharp.csproj", "{8AD04202-027D-2315-ECAA-8DA06563AE12}"
+EndProject
+Project("{4812706A-9E46-DEA3-FD14-7299D37F25F5}") = "ShipDefender", "Assembly-CSharp-Editor.csproj", "{4ED843D2-58FF-C925-A885-C607CDDBC160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20EA7121-AF74-B052-BA0B-AC8A36BBD0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EA7121-AF74-B052-BA0B-AC8A36BBD0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EA7121-AF74-B052-BA0B-AC8A36BBD0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EA7121-AF74-B052-BA0B-AC8A36BBD0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD04202-027D-2315-ECAA-8DA06563AE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD04202-027D-2315-ECAA-8DA06563AE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD04202-027D-2315-ECAA-8DA06563AE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD04202-027D-2315-ECAA-8DA06563AE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED843D2-58FF-C925-A885-C607CDDBC160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED843D2-58FF-C925-A885-C607CDDBC160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED843D2-58FF-C925-A885-C607CDDBC160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED843D2-58FF-C925-A885-C607CDDBC160}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
