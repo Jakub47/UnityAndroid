@@ -9,9 +9,18 @@ public class Enemy : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		if(col.gameObject.tag == "Player"){
+			Destroy (gameObject);
+		}
+	}
+
 	// Update is called once per frame
-	void FixedUpdate () {
+	void FixedUpdate () 
+	{
 		transform.Rotate(new Vector3(0,0,rotationSpeed * Time.deltaTime));
 	}
 }
