@@ -13,7 +13,9 @@ public class Enemy : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if(col.gameObject.tag == "Player"){
+		if(col.gameObject.tag == "Player")
+		{
+			col.SendMessage ("LoadNewImage");
 			Destroy (gameObject);
 		}
 	}
