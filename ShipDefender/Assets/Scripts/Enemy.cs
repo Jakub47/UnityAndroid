@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour {
 		if(col.gameObject.tag == "Player")
 		{
 			col.SendMessage ("LoadNewImage");
+			col.SendMessage ("PlayAnimation");
 			Destroy (gameObject);
 		}
 	}

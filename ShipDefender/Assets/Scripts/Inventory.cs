@@ -5,7 +5,8 @@ public class Inventory : MonoBehaviour {
 
 	public Sprite[] healthStatus;
 	public SpriteRenderer currentImage;
-
+	public float resetTime;
+	public ParticleSystem explosion;
 
 	private int counter;
 	// Use this for initialization
@@ -23,5 +24,19 @@ public class Inventory : MonoBehaviour {
 	{
 		counter++;
 		currentImage.sprite = healthStatus [counter];
+	}
+
+	void PlayAnimation()
+	{
+		StartCoroutine ("PlayAndStop");
+	}
+
+	IEnumerator PlayAndStop()
+	{
+		explosion.Play ();
+
+		yield return new WaitForSeconds (resetTime);
+
+		explosion.Stop ();
 	}
 }
