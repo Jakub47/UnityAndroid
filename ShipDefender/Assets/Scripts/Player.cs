@@ -16,7 +16,6 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		float hInput = CrossPlatformInputManager.GetAxis ("Horizontal") * speed * Time.deltaTime;
-
 		ship.AddForce (new Vector2 (hInput, 0.0f));
 	}
 }

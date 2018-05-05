@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour {
 		{
 			col.SendMessage ("LoadNewImage");
 			col.SendMessage ("PlayAnimation");
+			col.SendMessage ("Generate");
 			Destroy (gameObject);
 		}
 	}

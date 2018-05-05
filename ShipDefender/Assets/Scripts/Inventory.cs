@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour {
 	public SpriteRenderer currentImage;
 	public float resetTime;
 	public ParticleSystem explosion;
+	public GameObject placeToCreate;
 
 	private int counter;
 	// Use this for initialization
@@ -23,7 +24,12 @@ public class Inventory : MonoBehaviour {
 	void LoadNewImage()
 	{
 		counter++;
-		currentImage.sprite = healthStatus [counter];
+		if (counter == 7) {
+			currentImage.sprite = healthStatus [0];
+			counter = 0;
+		}
+		else
+			currentImage.sprite = healthStatus [counter];
 	}
 
 	void PlayAnimation()
@@ -38,5 +44,10 @@ public class Inventory : MonoBehaviour {
 		yield return new WaitForSeconds (resetTime);
 
 		explosion.Stop ();
+	}
+
+	void Generate() 
+	{
+		placeToCreate.SendMessage ("SpawnPipe");
 	}
 }
