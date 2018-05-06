@@ -7,15 +7,16 @@ public class Enemy : MonoBehaviour {
 	public GameObject pl;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () 
+	{
+		pl = GameObject.Find ("RockCreator");
 	}
 
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.gameObject.tag == "Blast") {
-			pl.SendMessage ("Generate");
+			pl.SendMessage ("SpawnPipe");
 			Destroy (col.gameObject);
 			Destroy (gameObject);
 		}
