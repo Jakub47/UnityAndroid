@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour {
 	public float rotationSpeed = 100;
 	public GameObject pl;
 
+
 	// Use this for initialization
 	void Awake () 
 	{
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.gameObject.tag == "Blast") {
+			TextScore.UpdateText ();
 			pl.SendMessage ("SpawnPipe");
 			Destroy (col.gameObject);
 			Destroy (gameObject);

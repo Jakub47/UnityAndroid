@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\RockBorder.cs" />
      <Compile Include="Assets\Scripts\RockGenerator.cs" />
+     <Compile Include="Assets\Scripts\TextScore.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />

@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TextScore.cs">
     <Files>
-      <File FileName="Assets\Scripts\RockGenerator.cs" Line="21" Column="16" />
-      <File FileName="Assets\Scripts\Player.cs" Line="26" Column="3" />
+      <File FileName="Assets\Scripts\TextScore.cs" Line="30" Column="21" />
       <File FileName="Assets\Scripts\RockBorder.cs" Line="22" Column="11" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="12" Column="37" />
-      <File FileName="Assets\Scripts\Inventory.cs" Line="50" Column="3" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="20" Column="28" />
+      <File FileName="Assets\Scripts\Inventory.cs" Line="28" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

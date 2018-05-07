@@ -25,6 +25,7 @@ public class Inventory : MonoBehaviour {
 	{
 		counter++;
 		if (counter == 7) {
+			TextScore.ResetText ();
 			currentImage.sprite = healthStatus [0];
 			counter = 0;
 		}
