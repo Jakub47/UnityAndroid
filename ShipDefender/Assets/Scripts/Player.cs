@@ -11,9 +11,12 @@ public class Player : MonoBehaviour {
 	public float speedForBlast;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		
 	}
+
+
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -25,4 +28,5 @@ public class Player : MonoBehaviour {
 	{
 		Instantiate (blast, ship.gameObject.transform.position, Quaternion.identity);
 	}
+		
 }
