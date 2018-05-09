@@ -5,7 +5,7 @@ public class RockGenerator : MonoBehaviour
 {
 	public GameObject rock;
 	public GameObject Sky;
-
+	public float setTime = 3f;
 
 	private float timer;
 
@@ -20,9 +20,15 @@ public class RockGenerator : MonoBehaviour
 	{
 		timer += Time.deltaTime;
 
-		if (timer >= 3) {
+		if (timer >= setTime) {
+			setTime--;
+			Debug.Log (setTime);
 			timer = 0.0f;
 			SpawnPipe ();
+		}
+
+		if (setTime < 1) {
+			setTime = 3f;
 		}
 	}
 

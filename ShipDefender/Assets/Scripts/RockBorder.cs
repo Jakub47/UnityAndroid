@@ -19,7 +19,7 @@ public class RockBorder : MonoBehaviour
 	{
 		if (col.gameObject.tag == "Rock") 
 		{
-			placeToCreate.SendMessage ("SpawnPipe");	
+			
 			Destroy (col.gameObject);
 		}
 	}
