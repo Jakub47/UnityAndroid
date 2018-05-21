@@ -11,11 +11,39 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		Vector3 topLeft = Rect (0, 0, Screen.width / 2, Screen.height / 2);
-		Vector3 bottomLeft = Rect (0, 0, Screen.width / 2, Screen.height / 2);
-
-		if (Input.touchCount > 0) {
-			if(topLeft.Contains())
+		if(Input.GetMouseButtonDown(0))
+		{
+			if (Input.mousePosition.x < Screen.width/2)
+			{
+				Debug.Log ("left");
+			}
+			else if (Input.mousePosition.x > Screen.width/2)
+			{
+				Debug.Log ("right");
+			}
+		}
+		else {
+			//Do nothing for now
 		}
 	}
 }
+
+
+/* Mobile ver.
+if (Input.touchCount > 0)
+          {
+              Touch touch = Input.GetTouch (0);
+              if (touch.position.x < Screen.width/2)
+              {
+                  //Move Player Left
+              }
+              else if (touch.position.x > Screen.width/2)
+              {
+                  //Move Player Right
+              }
+          }
+          else 
+              //Do nothing for now
+          }
+
+*/
