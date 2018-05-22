@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
+
+	public Text txt;
 
 	// Use this for initialization
 	void Start () {
@@ -11,19 +14,31 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetMouseButtonDown(0))
+		Rect topLeft = new Rect(0, 0, Screen.width / 2, Screen.height / 2);
+		Rect bottomLeft = new Rect(0, Screen.height / 2, Screen.width / 2, Screen.height / 2);
+		Rect topRight = new Rect(Screen.width / 2, 0, Screen.width / 2, Screen.height / 2);
+		Rect bottomRight = new Rect(Screen.width / 2, Screen.height / 2, Screen.width / 2, Screen.height / 2);
+
+		if (Input.touchCount > 0)
 		{
-			if (Input.mousePosition.x < Screen.width/2)
+			var touchPos = Input.GetTouch(0).position;
+			print (touchPos);
+			if (topLeft.Contains(touchPos))
 			{
-				Debug.Log ("left");
+				txt.text =  "topLeft touched";
 			}
-			else if (Input.mousePosition.x > Screen.width/2)
+			if (bottomLeft.Contains(touchPos))
 			{
-				Debug.Log ("right");
+				txt.text =  "bottomLeft touched";
 			}
-		}
-		else {
-			//Do nothing for now
+			if (topRight.Contains(touchPos))
+			{
+				txt.text =  "topRight touched" ;
+			}  
+			if (bottomRight.Contains(touchPos))
+			{
+				txt.text =  "bottomRight touched";
+			}
 		}
 	}
 }
@@ -45,5 +60,23 @@ if (Input.touchCount > 0)
           else 
               //Do nothing for now
           }
+
+*/
+
+/* Com ver
+if(Input.GetMouseButtonDown(0))
+{
+	if (Input.mousePosition.x < Screen.width/2)
+	{
+		Debug.Log ("left");
+	}
+	else if (Input.mousePosition.x > Screen.width/2)
+	{
+		Debug.Log ("right");
+	}
+}
+else {
+	//Do nothing for now
+}
 
 */
