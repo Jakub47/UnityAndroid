@@ -14,10 +14,11 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		Rect topLeft = new Rect(0, 0, Screen.width / 2, Screen.height / 2);
-		Rect bottomLeft = new Rect(0, Screen.height / 2, Screen.width / 2, Screen.height / 2);
-		Rect topRight = new Rect(Screen.width / 2, 0, Screen.width / 2, Screen.height / 2);
-		Rect bottomRight = new Rect(Screen.width / 2, Screen.height / 2, Screen.width / 2, Screen.height / 2);
+		Rect topLeft = new Rect(0, Screen.height / 2, Screen.width / 2, Screen.height / 2); //topleft
+		Rect bottomLeft = new Rect(0, 0, Screen.width / 2, Screen.height / 2); // bottomleft
+
+		Rect topRight = new Rect(Screen.width / 2, Screen.height / 2, Screen.width / 2, Screen.height / 2); //topRight
+		Rect bottomRight = new Rect(Screen.width / 2, 0, Screen.width / 2, Screen.height / 2); //bottomRight
 
 		if (Input.touchCount > 0)
 		{
