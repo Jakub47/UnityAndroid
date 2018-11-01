@@ -1,11 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{4812706A-9E46-DEA3-FD14-7299D37F25F5}") = "ShipDefender", "Assembly-CSharp-firstpass.csproj", "{20EA7121-AF74-B052-BA0B-AC8A36BBD0B5}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipDefender", "Assembly-CSharp-firstpass.csproj", "{20EA7121-AF74-B052-BA0B-AC8A36BBD0B5}"
 EndProject
-Project("{4812706A-9E46-DEA3-FD14-7299D37F25F5}") = "ShipDefender", "Assembly-CSharp.csproj", "{8AD04202-027D-2315-ECAA-8DA06563AE12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipDefender", "Assembly-CSharp.csproj", "{8AD04202-027D-2315-ECAA-8DA06563AE12}"
 EndProject
-Project("{4812706A-9E46-DEA3-FD14-7299D37F25F5}") = "ShipDefender", "Assembly-CSharp-Editor.csproj", "{4ED843D2-58FF-C925-A885-C607CDDBC160}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipDefender", "Assembly-CSharp-Editor.csproj", "{4ED843D2-58FF-C925-A885-C607CDDBC160}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
